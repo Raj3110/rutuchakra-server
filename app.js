@@ -6,12 +6,8 @@ const nodemailer = require("nodemailer");
 const { MongoClient, ServerApiVersion } = require("mongodb");
 
 const app = express();
-app.use(
-  cors({
-    origin: process.env.CLIENT_URI,
-    credentials: true,
-  })
-);
+app.use(cors({ origin: 'https://deluxe-cat-b99416.netlify.app' }));
+
 app.use(bodyParser.json());
 
 const db_name = "RutuChakra";
