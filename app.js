@@ -6,7 +6,7 @@ const nodemailer = require("nodemailer");
 const { MongoClient, ServerApiVersion } = require("mongodb");
 
 const app = express();
-app.use(cors({ origin: 'https://deluxe-cat-b99416.netlify.app' }));
+app.use(cors({ origin: '*' }));
 
 app.use(bodyParser.json());
 
